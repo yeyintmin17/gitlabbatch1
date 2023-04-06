@@ -1,10 +1,3 @@
-git --version
-
-git init lesson1
-cd lesson1
-
-git status
-
 => Check Folder Dir
 
 for window = Dir
@@ -13,7 +6,6 @@ for linux = ls -la or -al
 for linux = ls -a
 
 => Set Default Branch
-
 git config --global init.defaultBranch main
 
 => Set Local user name and email
@@ -38,3 +30,74 @@ git config --local user.name
 git config --local user.email
 
 git config -l --show-origin
+
+git --version
+
+git init lesson1
+cd lesson1
+
+git status
+
+git add lesson1.txt
+
+git status
+
+git commit -m "adding lesson1.txt"
+
+git log
+
+=> Create New Branch
+git branch new-feature
+
+=> Check All Branch List
+git branch
+
+git log
+
+for linux = vim lesson1.txt
+for linux = i > esc > :wq
+
+git status
+
+vim lesson2.txt
+
+for linux = vim lesson2.txt
+for linux = i > esc > :wq
+
+git status
+
+=> Change Default Branch
+git chekout new-feature
+
+git add lesson1.txt
+
+git status
+
+git commit -m "add 2 contries lesson1.txt"
+
+git status
+
+git log
+
+git add lesson2.txt
+
+git status
+
+git commit -m "adding lesson2.txt"
+
+git status
+
+ls
+
+cat lesson1.txt
+cat lesson2.txt
+
+git chekout main
+
+git status
+
+ls 
+
+cat lesson1.txt
+
+ls

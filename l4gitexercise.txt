@@ -1,0 +1,130 @@
+git init lesson2
+
+linux = ls
+window = dir
+
+=> default branch
+git config --global init.defaultbranch main
+git status
+
+git branch -m main
+git status
+
+vim cars.txt
+i
+
+cat cars.txt
+
+git status
+
+vim programming.txt
+i
+esc > :wq
+
+git status
+
+=> Go Source Folder
+for windows = explore .
+for linux = xdg-open.
+
+=> Add all files to Staging Area
+git add -A
+
+git status
+
+git commit -m "adding cars and programming files"
+
+git status
+
+git log
+
+=> Create New Branch
+git branch new-feature1 
+git branch new-feature2
+
+git branch
+
+git status
+
+git log
+
+=> Change Branch
+git checkout new-feature1
+
+git status
+
+git log
+
+vim phones.txt
+
+git add phones.txt
+
+git status
+
+git add phone.txt
+
+git status
+
+git add cars.txt
+
+git status
+
+git commit -m "phone added and car modifying"
+
+git status
+
+git log
+
+git status
+
+linux = ls
+window = dir
+
+git checkout new-feature2
+
+git status
+git log
+
+linux = ls
+window = dir
+
+git checkout main
+
+git status
+git log
+
+linux = ls
+window = dir
+
+git checkout new-feature1
+
+git status
+git log
+
+linux = ls
+window = dir
+
+git log
+git log --all --oneline (--all mean all branch, --oneline mean all of repository)
+
+git checkout main
+git cars.txt
+git programming.txt
+
+git merge new-feature1
+
+git status
+
+ls
+cat cars.txt
+cat programming.txt
+cat phones.txt
+
+git log
+
+git checkout new-feature2
+
+ls
+
+cat cars.txt
+cat programming.txt
