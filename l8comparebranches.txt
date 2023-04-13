@@ -1,0 +1,71 @@
+git init
+
+touch file1.txt file2.txt
+
+vim file1.txt
+edit: 
+this is post one
+this is post two
+this is post three
+
+esc > :wq
+
+git status
+
+git add *
+git commit -m "added file1 & 2"
+
+git branch
+ls
+cat file1.txt
+
+git branch new-feature
+
+git branch
+
+git branch new-feature
+
+git branch
+
+touch file3.txt file4.txt
+
+vim file3.txt
+edit: 
+this is comment one
+this is comment two
+this is comment three
+
+esc > :wq
+
+vim file4.txt
+edit: 
+this is react one
+this is react two
+this is react three
+
+esc > :wq
+
+vim file1.txt
+edit: 
+this is post four
+this is post five
+this is post six
+
+esc > :wq
+
+git status
+git status -s
+git diff
+git add -A or git add *
+git status
+git status -s
+git commit -m "M file1 and A file3 & 4"
+git status
+
+git branch
+
+clear
+
+git diff main new-feature
+clear
+git diff new-feature main
