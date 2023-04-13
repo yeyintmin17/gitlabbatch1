@@ -1,0 +1,61 @@
+=> Git Ignore
+
+mkdir lesson4
+cd lesson4
+
+git init
+git status
+
+touch .gitignore
+ls -la
+
+for linux = vim .gitignore
+for windows = .gitignore --edit
+
+# Complided Sources #
+#####################
+
+*.com
+*.class
+*.dll
+*.exe
+*.xlsx
+
+# Packages #
+
+*.zip
+*.rar
+*.tar
+*.7zip
+*.dmg
+*.iso
+
+# Images Sources #
+
+*.jpeg
+*.png
+*.ico
+
+esc > :wq
+
+touch country.txt
+touch phone.txt
+touch computer.txt
+touch user.jpg
+touch favicon.ico
+touch application.exe
+touch database.xlsx
+touch plugin.zip
+
+git status
+
+# result
+country.txt computer.txt phone.txt user.jpg
+
+ls -la
+rm .gitignore
+
+git status
+
+# result 
+application.exe computer.txt country.txt database.xlsx phone.txt user.jpg favicon.ico application.exe database.xlsx plugin.zip

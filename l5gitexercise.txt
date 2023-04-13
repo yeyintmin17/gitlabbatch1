@@ -1,0 +1,34 @@
+=> Create New Folder
+mkdir lesson3
+
+cd lesson3
+
+vim country.txt
+esc > :wq
+
+vim phone.txt
+esc > :wq
+
+vim computer.txt
+esc > :wq
+
+ls
+cat country.txt
+
+git init 
+git status
+
+git add -A or git add *
+
+=> Unstage
+git reset computer.txt
+
+git status
+
+git reset country.txt computer.txt
+
+git status
+
+git add -A (or) git add *
+
+git status
