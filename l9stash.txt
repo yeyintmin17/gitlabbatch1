@@ -27,3 +27,297 @@ git stash
 git status
 ls
 git stash list
+
+touch file2.txt
+ls
+echo "thanks for visit" > file2.txt
+cat file2.txt
+
+git add file2.txt
+git status
+ls
+
+git stash
+
+git status
+ls
+
+git stash list
+
+
+touch file3.txt
+ls
+
+echo "please click the share button" > file3.txt
+ls
+cat file3.txt
+
+git status
+ls
+git add file3.txt
+
+git stash
+git status
+ls
+git stash list
+
+
+touch file4.txt
+ls
+
+echo "please click the share button" > file4.txt
+ls
+cat file4.txt
+
+git status
+ls
+git add file4.txt
+
+git stash
+git status
+ls
+git stash list
+
+
+=> Pop a single stash state
+
+git stash pop
+ls
+git status
+git stash list
+
+git stash pop
+ls
+git status
+git stash list
+
+git stash show
+
+git stash pop
+ls
+git status
+git stash list
+
+git stash show
+
+git stash pop
+ls
+git status
+git stash list
+
+git commit -m "add file 1 2 3 4"
+git status
+ls
+git stash list
+
+-------------------------------------------------------------------
+
+mkdir lesson8
+cd lesson8
+
+git init
+gt status
+
+touch file0.txt
+ls
+
+echo "welcome to our site" > file0.txt
+cat file0.txt
+git status
+git add file0.txt
+git commit -m "added file0"
+git status
+
+touch file1.txt
+ls
+echo "welcome to our site" > file1.txt
+cat file1.txt
+git status
+git add file1.txt
+git status
+ls
+
+git stash
+git status
+ls
+git stash list
+
+touch file2.txt
+ls
+echo "thanks for visit" > file2.txt
+cat file2.txt
+
+git add file2.txt
+git status
+ls
+
+git stash
+
+git status
+ls
+
+git stash list
+
+
+touch file3.txt
+ls
+
+echo "please click the share button" > file3.txt
+ls
+cat file3.txt
+
+git status
+ls
+git add file3.txt
+
+git stash
+git status
+ls
+git stash list
+
+
+touch file4.txt
+ls
+
+echo "please click the share button" > file4.txt
+ls
+cat file4.txt
+
+git status
+ls
+git add file4.txt
+
+git stash
+git status
+ls
+git stash list
+
+
+=> Apply a single stash state
+
+git stash show
+
+git stash apply
+ls
+git status
+git stash list
+
+git commit -m "added file 4"
+git status
+ls
+
+* no result
+git stash apply
+git stash list
+
+git stash pop
+git stash show
+git stash apply
+
+git commit -m "added file 3"
+git status
+ls
+
+* no result
+git stash apply
+git stash list
+
+git stash pop
+git stash show
+git stash apply
+
+git commit -m "added file 2"
+git status
+ls
+
+=> Remove all the Stash
+git stash clear
+git stash list
+
+-------------------------------------------------------------------
+
+mkdir lesson9
+cd lesson9
+
+git init
+git status
+
+touch file0.txt
+ls
+
+echo "welcome to our site" > file0.txt
+cat file0.txt
+git status
+git add file0.txt
+git commit -m "added file0"
+git status
+
+touch file1.txt
+touch file2.txt
+
+ls
+
+git status
+git add *
+git status
+ls
+
+git stash save "added file 1 2"
+git status
+ls
+git stash list
+
+touch file3.txt
+touch file4.txt
+
+ls
+
+git status
+git add *
+git status
+ls
+
+git stash save "added file 3 4"
+git status
+ls
+git stash list
+
+git stash show
+git stash show stash@{0}
+git stash show stash@{1}
+
+=> Single Delete Stash
+git stash drop stash@{1}
+
+git stash list
+
+touch file5.txt
+touch file6.txt
+touch file7.txt
+
+git status
+git add *
+git status
+ls
+
+git stash save "added file 5 6 7"
+git status
+ls
+git stash list
+
+git stash show stash@{0}
+git stash show stash@{1}
+
+git stash show
+git stash apply
+
+git status
+git add *
+git commit -m "added file 5 6 7"
+git status
+
+git stash list
+git stash clear
+git stash list
+
+-------------------------------------------------------------------
