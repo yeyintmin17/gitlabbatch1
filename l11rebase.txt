@@ -1,0 +1,58 @@
+=> Rebase
+
+git init lesson11
+cd lesson11
+
+touch file1.txt file2.txt
+
+vim file1.txt
+Edit : Write down
+1. this is the first line
+2. this is the second line
+esc > :wq
+
+vim file2.txt
+Edit : Write down
+1. this is the first comment
+2. this is the second comment
+esc > :wq
+
+git status
+git status -s
+git add .
+git commit -m "A file 1 2"
+git status
+
+ls
+
+git checkout -b newfeature
+git branch
+
+touch file3.txt file4.txt
+
+vim file3.txt
+Edit : Write down
+1. this is the first post
+2. this is the second post
+esc > :wq
+
+vim file4.txt
+Edit : Write down
+1. this is the first expression
+2. this is the second expression
+esc > :wq
+
+git status
+git status -s
+git add .
+
+git commit -m "A file 3 4"
+git status
+ls
+
+git checkout main
+git branch
+
+ls
+
+git merge newfeature

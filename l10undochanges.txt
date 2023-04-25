@@ -177,3 +177,42 @@ git log -3
 git log --oneline
 
 git log --all --oneline (or) git log --oneline --all
+
+ls
+git checkout cd2ea69 -- file2.txt
+ls 
+
+cat file2.txt
+cat file0.txt
+
+git log --oneline
+
+ls
+cat file0.txt
+git checkout 3d34408 -- file0.txt
+ls
+cat file2.txt
+cat file0.txt
+
+ls
+cat file2.txt
+cat file0.txt
+git checkout 189b328 file2.txt
+ls
+cat file2.txt
+cat file0.txt
+
+ls
+cat file2.txt
+cat file0.txt
+
+error > didn't build file5
+git checkout 189b328 *
+
+git checkout 459c628 *
+cat file2.txt
+cat file0.txt
+
+git checkout 189b328 file1.txt
+ls
+cat file1.txt
