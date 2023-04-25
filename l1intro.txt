@@ -1,0 +1,28 @@
+URL
+https://git-scm.com/
+
+=> Git Versuion Check
+git --version
+git version
+
+=> Git ?
+1. version control system (free and open source)
+2. system can make recording every changes in our project folder
+3. recall any specific version
+4. it allows many people can collaborate easily on a project
+
+=> Git vs Github & GitLab
+Git - a tool to manage repositories of GitHub & GitLab platform
+    - can use without GitHub & GitLab
+    - store versions as project histories
+
+GitHub & GitLab - to place the source code exists 
+                - can manage remotely by git
+                - online service that hosts our project
+                - share our codes to other developers
+                - download / collaborate 
+
+=> Important Notes
+Git - Create Repository (Every Project)
+    - Create Branch (Every Feature)
+    - No need to connect remote Repo

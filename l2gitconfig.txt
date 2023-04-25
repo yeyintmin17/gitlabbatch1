@@ -1,0 +1,25 @@
+=> Git Versuion Check
+git --version
+git version
+
+=> Update Git ( For Ubuntu )
+sudo apt remove git
+sudo add-apt-repository ppa:git-core/ppa -y
+sudo apt-get update
+
+=> User Config (name / email)
+git config --global user.name "maintest"
+git config --global user.email "maintest@gmail.com"
+
+git config --local user.name "test"
+git config --local user.email "test@gmail.com"
+
+git config --global user.name
+git config --global user.email
+
+git config --local user.name
+git config --local user.email
+
+=> List all variables in config file
+git config -l
+git config -l --show-origin
