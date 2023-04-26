@@ -25,7 +25,7 @@ git status
 
 ls
 
-git checkout -b newfeature
+git checkout -b new-feature
 git branch
 
 touch file3.txt file4.txt
@@ -55,4 +55,114 @@ git branch
 
 ls
 
-git merge newfeature
+git merge new-feature
+
+git checkout new-feature
+
+vim file1.txt
+Edit : Write down
+3. this is the third line
+4. this is the fourth line
+esc > :wq
+
+git status
+git status -s
+
+git add .
+git commit -m "M f1"
+ls
+
+git branch
+cat file1.txt
+
+git checkout main
+git branch
+
+ls
+
+cat file1.txt
+
+git rebase new-feature
+
+cat file1.txt
+
+git branch
+
+vim file3.txt
+Edit : Write down
+3. this is the third post
+4. this is the fourth post
+esc > :wq
+
+git status
+git status -s
+git add .
+git commit -m "M f3"
+git status
+git status -s
+
+ls
+
+cat file3.txt
+
+git checkout new-feature
+ls
+cat file3.txt
+
+vim file2.txt
+Edit : Write down
+3. this is the third comment
+4. this is the fourth comment
+esc > :wq
+
+cat file2.txt 
+cat file3.txt
+
+git status
+git status -s
+git add *
+git commit -m "M f2"
+git status
+
+ls
+git checkout main
+ls
+
+cat file2.txt 
+cat file3.txt
+
+git checkout new-feature
+ls
+
+cat file3.txt
+
+vim file2.txt
+Edit : Write down
+5. this is the fifth comment
+6. this is the sixth comment
+esc > :wq
+
+vim file5.txt
+Edit : Write down
+1. this is the third article
+esc > :wq
+
+vim file3.txt
+Edit : Write down
+7. this is the seventh post
+8. this is the eighth post
+esc > :wq
+
+ls
+cat file2.txt
+cat file3.txt
+cat file5.txt
+
+git status
+git add *
+git commit -m "M f2 f3 A f5"
+git status
+ls
+
+git checkout main
+ls
