@@ -1,0 +1,25 @@
+=> Git Tag
+(i) Lightweight Tags ( what version, only name )
+(ii) Annotated Tags ( not just name, detail - explain about version, allows you to add messages explaining the tag )
+
+=> Create Lightweight Tag
+git tag tagname
+
+=> Create Annotated Tag
+git tag -a tagname -m "message"
+
+=> Delete Tag
+git tag --delete tagname
+git tag -d tagname
+
+=> Check Tag list
+git tag --list
+
+git tag mytag
+git tag yourtag
+git tag --list
+git log --all --oneline
+git tag --delete mytag
+git tag -d yourtag
+git tag --list
+git tag --all --oneline
