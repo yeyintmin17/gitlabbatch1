@@ -166,3 +166,29 @@ ls
 
 git checkout main
 ls
+
+cat file2.txt
+cat file3.txt
+
+git rebase new-feature
+
+git branch
+
+cat file2.txt
+cat file3.txt
+
+vim file3.txt
+:wq
+
+cat file3.txt
+
+git branch
+git rebase --continue
+git branch
+git rebase --skip
+git branch
+
+ls
+cat file2.txt
+cat file3.txt
+cat file5.txt
